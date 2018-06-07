@@ -7,7 +7,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "npm run build && node server",
+    "start": "node server",
     "posttest": "npm run lint && nsp check",
     "test": "mocha test/*.spec.js"
   },

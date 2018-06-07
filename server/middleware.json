@@ -3,15 +3,15 @@
     "loopback#favicon": {}
   },
   "initial": {
-    "morgan": {
-      "params": ["dev", { "buffer": true } ]
-    },
     "compression": {},
     "cors": {
       "params": {
         "origin": true,
         "credentials": true,
         "maxAge": 86400
+      },
+      "morgan": {
+        "params": ["dev", { "buffer": true } ]
       }
     },
     "helmet#xssFilter": {},

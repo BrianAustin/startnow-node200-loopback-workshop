@@ -1,12 +1,12 @@
 module.exports = {
   "MongoDB": {
-    "host": "ds151530.mlab.com",
-    "port": 51530,
+    "host": process.env.MONGODB_HOST,
+    "port": process.env.MONGODB_PORT,
     "url": "",
-    "database": "heroku_8gdj73tc",
+    "database": process.env.MONGODB_DATABASE,
     "password": process.env.MONGODB_PW,
     "name": "MongoDB",
-    "user": "heroku_8gdj73tc",
+    "user": process.env.MONGODB_USER,
     "connector": "mongodb"
   }
 }
